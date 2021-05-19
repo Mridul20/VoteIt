@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VoteIt</string>
+
+    <string name="info">Select Your Candidate</string>
+    <string-array name="vote">
+
+        <item>Mridul Mittal</item>
+        <item>kshitij Kumar</item>
+        <item>Piyush Gurjar</item>
+        <item>Varun Tiwari</item>
+        <item>Gymkhaana no use</item>
+        <item>kaam 8th tk hoga kya??</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

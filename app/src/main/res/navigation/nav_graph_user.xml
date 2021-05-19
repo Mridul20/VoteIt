@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_user"
+    app:startDestination="@id/userHomeFragment">
+
+    <fragment
+        android:id="@+id/userHomeFragment"
+        android:name="com.example.onlinevotingsystem.fragments.user.UserHomeFragment"
+        android:label="fragment_user_home"
+        tools:layout="@layout/fragment_user_home" >
+        <action
+            android:id="@+id/action_userHomeFragment_to_voteFragment"
+            app:destination="@id/voteFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_electionResultFragment2"
+            app:destination="@id/electionResultFragment2" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_userPollDetailsFragment"
+            app:destination="@id/userPollDetailsFragment" />
+        <action
+            android:id="@+id/action_userHomeFragment_to_userUpdateProfileFragment"
+            app:destination="@id/userUpdateProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voteFragment"
+        android:name="com.example.onlinevotingsystem.fragments.user.VoteFragment"
+        android:label="fragment_vote"
+        tools:layout="@layout/fragment_vote" >
+        <action
+            android:id="@+id/action_voteFragment_to_userHomeFragment"
+            app:destination="@id/userHomeFragment"
+            app:popUpTo="@id/userHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/electionResultFragment2"
+        android:name="com.example.onlinevotingsystem.fragments.shared.ElectionResultFragment"
+        android:label="fragment_election_result"
+        tools:layout="@layout/fragment_election_result" >
+        <argument
+            android:name="PollNum"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPollDetailsFragment"
+        android:name="com.example.onlinevotingsystem.fragments.user.UserPollDetailsFragment"
+        android:label="fragment_user_poll_details"
+        tools:layout="@layout/fragment_user_poll_details" >
+        <action
+            android:id="@+id/action_userPollDetailsFragment_to_candidateListFragment2"
+            app:destination="@id/candidateListFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/candidateListFragment2"
+        android:name="com.example.onlinevotingsystem.fragments.shared.CandidateListFragment"
+        android:label="CandidateListFragment"
+        tools:layout="@layout/fragment_candidate_list">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/userUpdateProfileFragment"
+        android:name="com.example.onlinevotingsystem.fragments.user.UserUpdateProfileFragment"
+        android:label="fragment_user_update_profile"
+        tools:layout="@layout/fragment_user_update_profile" >
+        <action
+            android:id="@+id/action_userUpdateProfileFragment_to_changePasswordFragment3"
+            app:destination="@id/changePasswordFragment3" />
+        <action
+            android:id="@+id/action_userUpdateProfileFragment_to_updatePhotoFragment3"
+            app:destination="@id/updatePhotoFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment3"
+        android:name="com.example.onlinevotingsystem.fragments.shared.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment3_to_resetPasswordFragment4"
+            app:destination="@id/resetPasswordFragment4" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPasswordFragment4"
+        android:name="com.example.onlinevotingsystem.fragments.shared.ResetPasswordFragment"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" >
+        <action
+            android:id="@+id/action_resetPasswordFragment4_to_userHomeFragment"
+            app:destination="@id/userHomeFragment"
+            app:popUpTo="@id/userHomeFragment" />
+        <argument
+            android:name="Type"
+            app:argType="string" />
+        <argument
+            android:name="Role"
+            app:argType="string" />
+        <argument
+            android:name="ID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePhotoFragment3"
+        android:name="com.example.onlinevotingsystem.fragments.shared.UpdatePhotoFragment"
+        android:label="fragment_update_photo"
+        tools:layout="@layout/fragment_update_photo" >
+        <action
+            android:id="@+id/action_updatePhotoFragment3_to_userHomeFragment"
+            app:destination="@id/userHomeFragment"
+            app:popUpTo="@id/userHomeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument android:name="photoUrl" />
+    </fragment>
+</navigation>
