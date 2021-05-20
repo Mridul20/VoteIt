@@ -15,7 +15,6 @@ Here is a run through of how to set up the application:
 * Step 2 : In Android Studio open Get From Version Control and paste this link 
   * **`https://github.com/Mridul20/VoteIt.git`**
 * Step 3 :  Wait for gradle to build and then click on run app to run the project on the emulator/device.
-  * **`cd spotr`**
 * Now feel free to hack around the project.
 
 ### Method 2
