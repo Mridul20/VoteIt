@@ -40,8 +40,9 @@ Here is a run through of how to set up the application:
 
 # Screenshots
 
-![alt text](https://github.com/Mridul20/titanic-survival-checker/blob/main/static/ss1.JPG)
-![alt text](https://github.com/Mridul20/titanic-survival-checker/blob/main/static/ss2.JPG)
+![alt text](https://github.com/Mridul20/VoteIt/blob/main/screenshots/ss1.PNG)
+![alt text](https://github.com/Mridul20/VoteIt/blob/main/screenshots/ss2.PNG)
+![alt text](https://github.com/Mridul20/VoteIt/blob/main/screenshots/ss3.PNG)
 
 
 ## Author
