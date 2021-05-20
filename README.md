@@ -10,6 +10,8 @@ displays the result of the election once it's over.
 Here is a run through of how to set up the application:
 
 ### Method 1
+* Step 1 : Download latest version of 
+**[Android Studio](https://developer.android.com/studio)** , **[Git](https://git-scm.com/download/win)**  , **[JAVA SE SDK](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)** 
 * Step 1 : Clone this repository using the git clone link:
   * **`git clone https://github.com/Mridul20/Spotr.git`**
 * Step 2 : Navigate to the directory:
@@ -19,20 +21,24 @@ Here is a run through of how to set up the application:
 * Run the command **'python manage.py runserver'** to create a local link.
 
 ### Method 2
-* Directly download the apk in your phone/emulator **[here](https://github.com/Mridul20/VoteIt/VoteIt.apk)**
+* Directly download the apk in your phone/emulator 
 
 ## Known Bugs
 * None currently.
 
 
-## Technologies Used
+## Tools Used
 
-- Python 3.6.8
-- HTML
-- CSS
-- Bootstrap 4.3.1
-- Django
+- Android Studio
+- MySQL WorkBench
 
+## Tools Used
+
+- Android 
+- MySQL 
+- Java
+- XML
+- FireBase
 
 # Screenshots
 
