@@ -12,13 +12,11 @@ Here is a run through of how to set up the application:
 ### Method 1
 * Step 1 : Download latest version of 
 **[Android Studio](https://developer.android.com/studio)** , **[Git](https://git-scm.com/download/win)**  , **[JAVA SE SDK](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)** 
-* Step 1 : Clone this repository using the git clone link:
-  * **`git clone https://github.com/Mridul20/Spotr.git`**
-* Step 2 : Navigate to the directory:
+* Step 2 : In Android Studio open Get From Version Control and paste this link 
+  * **`https://github.com/Mridul20/VoteIt.git`**
+* Step 3 :  Wait for gradle to build and then click on run app to run the project on the emulator/device.
   * **`cd spotr`**
-* Step 3 : Open the directory created with your favorite IDE. If Atom type **`atom .`** if VSCode type **`code .`** . This will lauch the editor with the project setup,
 * Now feel free to hack around the project.
-* Run the command **'python manage.py runserver'** to create a local link.
 
 ### Method 2
 * Directly download the apk in your phone/emulator 
@@ -32,7 +30,7 @@ Here is a run through of how to set up the application:
 - Android Studio
 - MySQL WorkBench
 
-## Tools Used
+## Technologies Used
 
 - Android 
 - MySQL 
